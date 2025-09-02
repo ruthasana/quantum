@@ -86,12 +86,43 @@ nav.scrolled {
 }
 
 .mobile-menu {
-    display: none;
+    display:block;
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
 }
 
+/* Mobile Menu */
+.mobile-menu {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: #0a0a2a;
+      flex-direction: column;
+      width: 400px;
+      text-align: left;
+      padding: 20px;
+      /* display: none; */
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -1204,6 +1235,12 @@ about-section {
 
 .team-card:hover .learn-more {
     opacity: 1;
+}
+
+/*profile image*/
+.profile_img{
+    width: 180px;
+    
 }
 
 /* Modal Styles */
