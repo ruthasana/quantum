@@ -1244,6 +1244,10 @@ about-section {
 }
 
 /* Modal Styles */
+.appnom{
+      color: blue;
+      font-style: italic;
+    }
 .modal-overlay {
     display: none;
     position: fixed;
